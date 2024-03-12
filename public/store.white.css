@@ -1,0 +1,412 @@
+
+    
+    .start-menus {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: center;
+      align-content: center;
+      text-align: center;
+      gap: 10px;
+    }
+    
+    .logo > a > img {
+      text-align: center;
+      width: 6rem;
+      height: 6rem;
+      max-height: fit-content;
+      max-height: fit-content;
+      margin-left: 1rem;
+    }
+    
+    .name > a {
+      text-align: center;
+      word-spacing: 7px;
+      font-size: 2rem;
+      text-decoration: none;
+    }
+    
+    .w {
+      text-align: center;
+      color: #0080ff;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-weight: bolder;
+      letter-spacing: 5;
+    }
+    
+    .m {
+      text-align: center;
+      color: #0b3996;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-weight: bolder;
+      letter-spacing: 3;
+    }
+    
+    .end-menus {
+      display: flex;
+      flex-direction: row;
+      flex-grow: 2;
+      justify-content: space-evenly;
+      align-items: center;
+      align-content: center;
+      color: var(--dark-color-text) !important;
+    }
+    
+    .forum,
+    .store,
+    .notification,
+    .logout {
+      display: flex;
+      flex-direction: row;
+      font-size: 1.2rem;
+      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .forum > a,
+    .store > a,
+    .notification > a,
+    .logout > a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      padding: 5px;
+      color: var(--dark-color-text);
+      position: relative;
+      border-radius: 0.5rem;
+      box-sizing: border-box;
+    }
+  
+  
+  
+  
+  
+  /* main container css */
+  .container {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      color: var(--dark-color-text);
+  }
+  
+  .main {
+      display: grid;
+      grid-template-columns: 1fr 4fr;
+      gap: 20px;
+  }
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .container {
+      display: grid;
+      grid-template-columns: 1fr; /* Change to a single column layout */
+    }
+    /* Adjust styles for smaller screens */
+    .products-grid {
+      padding: 1.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+  }
+  .menus {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  .menus div {
+      display: flex;
+      flex-direction: row;
+      text-align: center;
+      /* border-bottom: 1px solid #eeeeee; */
+      padding: 13px 0px 10px;
+      gap: 5px;
+  }
+  
+  a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--main-color);
+  }
+  
+  .menus div a {
+      text-decoration: none;
+      color: var(--dark-color-text);
+      font-family: "Poppins, sans-serif";
+      font-weight: 800;
+      font-size: 18px;
+  }
+  
+  .cls-main .dash-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+  }
+  
+  .dash-grid div {
+      padding: 20px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-weight: 900;
+      border-radius: .5rem;
+  }
+  
+  .cls-left {
+      border: 2px solid #eeeeee;
+      padding: 5px;
+      margin-right: 10px;
+      border-radius: .5rem;
+      background: var(--white-background-color);
+  }
+  
+  .wlc-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  }
+  
+  .wlc-info .avater .bg-img .background-img {
+      align-self: center;
+      border-radius: .5rem;
+      width: 15em;
+  }
+  
+  .name-status {
+      text-align: center;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: small;
+      border-bottom: 2px solid #eeeeee;
+  }
+  
+  .status-active {
+      color: green;
+  }
+  
+  .cls-active {
+      border-left: 5px solid #0066cc;
+  }
+  
+  
+  .dash-grid {
+      display: flex;
+      flex-wrap: wrap;
+      
+    }
+    
+    .total-sales{
+      background-color: lightskyblue; /* red */
+    }
+    
+    .total-orders{
+      background-color: #2ECC40; /* green */
+    }
+    
+    .total-returns{
+      background-color: #FF4136; /* red */
+    }
+    .all-reviews{
+      background-color: #0074D9; /* blue */
+    }
+    
+    .top-listings{
+      background-color: #FF851B; /* orange */
+    }
+    
+    .top-earning{
+      background-color: #B10DC9; /* purple */
+    }
+    
+    /* optional styles for the links */
+    .dash-grid a,
+    .dash-grid  p{
+      display: block;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    
+  .dash-grid p{
+      font-size: 20px;
+  }
+  
+  
+  .latest-orders,
+.top-products {
+    /* border: 2px solid #eeeeee; */
+    padding: 1em;
+    /* background: var(--secondary-white-bg); */
+    background: var(--white-background-color);
+
+}
+.top-products{
+  margin-top: 1em;
+}
+.title-latest {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px;
+    align-items: center;
+    text-align: center;
+}
+
+.title-latest h4 {
+    font-size: 1rem;
+    color: #0066cc;
+}
+
+.view-latest a {
+    color: var(--text-color-for-blue-bg);
+    text-decoration: none;
+    padding:5px;
+    background-color: #0066cc;
+    border-radius: .5rem;
+    font-size: .8rem;
+}
+
+/*  alert box  */
+.alert-box-div {
+  background-color: rgba(68, 68, 75, 0.5);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.alert-box {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: fit-content;
+  width: calc(100vw - 70%);
+  background: var(--secondary-white-bg);
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+/* create a listings  */
+.listing-type{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: fit-content;
+  width: calc(100vw - 70%);
+  background: var(--secondary-white-bg);
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  padding: 10px;
+}
+.alert-box a,
+.alert-box h3,
+.listing-type a, 
+.listing-type h3{
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.3rem;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: .5rem;
+  color: var(--main-color);
+}
+.alert-box a,
+.listing-type a{
+  margin-bottom: 20px;
+}
+.alert-box a:visited,
+.listing-type a:visited{
+  color: var(--main-color);
+}
+
+.alert-box h3,
+.listing-type h3{
+  border: none;
+}
+
+
+.form-container {
+  font-family: 'Arial', sans-serif;
+max-width: 800px;
+margin: 0 auto;
+padding: 20px;
+background: var(--secondary-white-bg);
+border-radius: 8px;
+/* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+/* Style form labels */
+.form-label {
+display: block;
+margin-bottom: 8px;
+font-weight: bold;
+}
+
+/* Style form inputs and textareas */
+.form-input,
+.form-textarea,
+.form-select {
+width: 100%;
+padding: 10px;
+margin-bottom: 10px;
+box-sizing: border-box;
+/* border: 1px solid #ccc; */
+border-radius: 4px;
+}
+
+/* Style the submit button */
+.submit-nxt {
+background-color: #4caf50;
+color: var(--text-color-for-blue-bg);
+padding: 10px 15px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+font-size: 16px;
+}
+
+/* Add some spacing to the optional message */
+.form-container span {
+display: block;
+margin-top: 10px;
+margin-bottom: 20px;
+text-align: center;
+color: darkred;
+}
+
+/* Style file input */
+.form-input[type="file"] {
+padding: 5px;
+}
+
+/* Style the optional return policy input */
+.form-input[name="return_policy"] {
+width: 100%;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+.form-container {
+  width: 90%;
+}
+}
+
+input,textarea,select{
+  background: var(--white-background-color);
+  color: var(--dark-color-text);
+}

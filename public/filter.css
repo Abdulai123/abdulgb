@@ -1,0 +1,7 @@
+.icon-filter{
+    filter: invert(18%) sepia(71%) saturate(1509%) hue-rotate(202deg) brightness(108%) contrast(115%);
+}
+
+.icon-filter:hover{
+    filter: invert(38%) sepia(94%) saturate(3991%) hue-rotate(198deg) brightness(104%) contrast(107%);
+}
