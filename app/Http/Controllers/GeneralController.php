@@ -282,8 +282,6 @@ class GeneralController extends Controller
         }
     }
 
-
-
     public static function  encryptPGPNotes($note, $public_key)
     {
         $gpg = new gnupg();
